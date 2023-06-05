@@ -1,0 +1,12 @@
+<-- CONECTAR COM BANCO DE DADOS -->
+- Entrar no PgAdmin 
+- Colocar senha "postgrees" ou "root"
+- Criar BANCO (se não tiver)
+- Ir em TOOLS -> Query Tools 
+- Colar texto do arquivo sql.sql
+- Play.
+- Abrir VSCODE (ctrl + shift + A)
+
+<-- VSCODE -->
+- Instalar dependências (npm install)
+- Rodar código (npm start)
