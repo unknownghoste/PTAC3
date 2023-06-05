@@ -42,6 +42,16 @@ app.post('/pessoas', async function(req, res){
   }
 });
 
+app.delete('/pessoas', async function(req, res){
+  try {
+    var pessoas = await Pessoa.insert(req.body.id);
+    res.json(pessoas.rows);
+  } catch (error) {
+    console.error('Erro ao postar pessoas:', error);
+    res.status(500).json({ error: 'Ocorreu um erro ao buscar pessoas' });
+  }
+});
+
 app.listen(3000, function() {
   console.log('App de Exemplo escutando na porta 3000!')
 });

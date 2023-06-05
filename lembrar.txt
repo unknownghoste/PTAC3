@@ -10,3 +10,4 @@
 <-- VSCODE -->
 - Instalar dependências (npm install)
 - Rodar código (npm start)
+a
